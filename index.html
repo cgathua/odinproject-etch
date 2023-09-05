@@ -8,6 +8,35 @@
     <title> Odin Project Etch A Sketch w/Typescript</title>
   </head>
   <body>
+    <main>
+      <section>
+        <figure>
+          <figcaption>
+            <fieldset>
+              <legend><label for="widthRange">Grid Width</label></legend>
+              <input type="range" id="widthRange" min="0" max="25">
+              <span id="widthValue">0</span>
+            </fieldset>
+
+            <fieldset>
+              <legend><label for="heightRange">Grid Height</label></legend>
+              <input type="range" id="heightRange" min="0" max="25">
+              <span id="heightValue">0</span>
+            </fieldset>
+          </figcaption>
+
+          <figcaption>
+            <button id="createGrid">Create Grid</button>
+            <button id="resetBtn">Reset Grid</button>
+            <input type="color" id="colorInput">
+            <button id="eraseBtn">Erase</button>
+          </figcaption>
+
+        </figure>
+        <div class="containerDiv"></div>
+      </section>
+    </main>
+    <!--vite config-->
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
